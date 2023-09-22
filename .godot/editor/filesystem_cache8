@@ -1,9 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695390460
-mainmenu.tscn::PackedScene::2961653674185772221::1695390460::0::1::::<><>::
+::res://::1695397773
+soldati.png::CompressedTexture2D::8143370520745693331::1695393594::1695393594::1::::<><>::
+soldier_walk1.png::CompressedTexture2D::8148832408022314551::1695391667::1695391667::1::::<><>::
 ::res://animations/::1695386133
-::res://animations/Soldier/::1695386150
-soldier_1-IDLE.png::CompressedTexture2D::6994785559898666082::1695386133::1695386150::1::::<><>::
+::res://animations/Soldier/::1695400849
+soldier_1-IDLE.png::CompressedTexture2D::6535832138937163766::1695386133::1695396958::1::::<><>::
+soldier_atack.png::CompressedTexture2D::2400225739484806960::1695396934::1695396958::1::::<><>::
+soldier_walk1.png::CompressedTexture2D::4929236820294513956::1695396934::1695396958::1::::<><>::
+soldier_walk_with_gun.png::CompressedTexture2D::6820301543439141152::1695400849::1695400849::1::::<><>::
 ::res://background/::1695390009
 a58c281ab5a538f5.png::CompressedTexture2D::8543251620300006035::1695386135::1695390009::1::::<><>::
 pixil-frame-0_1.png::CompressedTexture2D::8352927571207088722::1695386135::1695390009::1::::<><>::
@@ -74,11 +78,16 @@ spr_RoninGetHit_strip.png::CompressedTexture2D::6366487088109370646::1695386134:
 spr_RoninIdle_strip.png::CompressedTexture2D::2804157341013190471::1695386135::1695386149::1::::<><>::
 spr_RoninJump_strip.png::CompressedTexture2D::7103991213716752783::1695386135::1695386149::1::::<><>::
 spr_RoninRun_strip.png::CompressedTexture2D::4534946800022123969::1695386135::1695386149::1::::<><>::
-::res://scripts/::1695390460
-character_body_2d.gd::GDScript::-1::1695389886::0::1::::<>CharacterBody2D<>::
-character_body_2d.tscn::PackedScene::3422623957692257934::1695390460::0::1::::<><>::res://scripts/character_body_2d.gd<>uid://c6wldjh4apaec::::res://animations/Soldier/soldier_1-IDLE.png
-world.tscn::PackedScene::193339566544083955::1695390460::0::1::::<><>::uid://t7dr0hbj6rjo::::res://background/zad.png<>uid://bo07d7yflo04q::::res://scripts/character_body_2d.tscn<>uid://c0m8j04grhtlb::::res://background/pixil-frame-0_5.png<>uid://sakmtyn8rhyy::::res://background/pixil-frame-0_6.png<>uid://tkipp03e7ghm::::res://background/pixil-frame-0_4.png<>uid://h5sroyxl7ro6::::res://background/pixil-frame-0_2.png
-::res://Sprites/::1695386150
-soldier_1.png::CompressedTexture2D::6440465235855798540::1695386133::1695386149::1::::<><>::
-test.png::CompressedTexture2D::2428336766121259789::1695386133::1695386150::1::::<><>::
-::res://Sprites/Not done (DON`T TOUCH)/::1695386133
+::res://scripts/::1695400826
+character_body_2d.gd::GDScript::-1::1695400826::0::1::::<>CharacterBody2D<>::
+character_body_2d.tscn::PackedScene::3422623957692257934::1695400826::0::1::::<><>::res://scripts/character_body_2d.gd<>uid://c0eag2x0rxsag::::res://animations/Soldier/soldier_1-IDLE.png<>uid://dodmcxs55rpgh::::res://soldier_walk1.png<>uid://bagxmqsp84gyq::::res://animations/Soldier/soldier_atack.png
+world.tscn::PackedScene::193339566544083955::1695400826::0::1::::<><>::uid://t7dr0hbj6rjo::::res://background/zad.png<>uid://bo07d7yflo04q::::res://scripts/character_body_2d.tscn<>uid://c0m8j04grhtlb::::res://background/pixil-frame-0_5.png<>uid://sakmtyn8rhyy::::res://background/pixil-frame-0_6.png<>uid://tkipp03e7ghm::::res://background/pixil-frame-0_4.png<>uid://h5sroyxl7ro6::::res://background/pixil-frame-0_2.png
+::res://sounds/::1695396958
+aks74u_draw_full.ogg::AudioStreamOggVorbis::5097591350861530919::1695396934::1695396958::1::::<><>::
+aks74u_empty.ogg::AudioStreamOggVorbis::1731907681498397655::1695396934::1695396958::1::::<><>::
+knife.ogg::AudioStreamOggVorbis::1110354152019533406::1695396934::1695396958::1::::<><>::
+::res://Sprites/::1695400849
+gun.png::CompressedTexture2D::7542377379502895022::1695400849::1695400849::1::::<><>::
+soldier_1.png::CompressedTexture2D::2425107203268204625::1695386133::1695396958::1::::<><>::
+test.png::CompressedTexture2D::8301945430901466760::1695386133::1695396958::1::::<><>::
+::res://Sprites/Not done (DON`T TOUCH)/::1695400849

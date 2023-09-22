@@ -18,7 +18,7 @@ scale = Vector2(0.99805, 1.03735)
 texture = ExtResource("1_it4mg")
 
 [node name="PlayeR" parent="." instance=ExtResource("3_fkemh")]
-position = Vector2(-1657, 481)
+position = Vector2(-1719, 498)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 

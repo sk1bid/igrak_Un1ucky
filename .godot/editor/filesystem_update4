@@ -5,3 +5,6 @@ res://scripts/menu.gd
 res://mainmenu.tscn
 res://scripts/mainmenu.gd
 res://scripts/mainmenu.tscn
+res://run.tscn
+res://scripts/character_body_2d.gd
+res://scripts/attack.gd

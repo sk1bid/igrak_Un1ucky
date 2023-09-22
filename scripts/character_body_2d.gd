@@ -1,10 +1,11 @@
 extends CharacterBody2D
 
 @onready var sprite_2D = $Player
-@onready var animation_player = $Node/Animation1
+@onready var animation_player = $Animation1
+
 
 const GRAVITY = 1000.0
-const RUN_SPEED = 120.0
+const RUN_SPEED = 275.0
 const JUMP_VELOCITY = -400.0
 const MAX_FALL = 400.0
 
@@ -19,6 +20,7 @@ func _physics_process(delta):
 	jump_handler()
 	clamp_fall_velocity()
 	calculate_state()
+
 
 
 func apply_gravity(delta):
@@ -36,6 +38,8 @@ func move_horizontal():
 	if Input.is_action_pressed('move_left'):
 		velocity.x -= RUN_SPEED
 		sprite_2D.flip_h = true
+		
+		
 	elif Input.is_action_pressed('move_right'):
 		velocity.x += RUN_SPEED
 		sprite_2D.flip_h = false
@@ -62,6 +66,7 @@ func set_state(new_state: PLAYER_STATE):
 		PLAYER_STATE.FALL:
 			animation_player.play('fall')
 		
+		
 func calculate_state():
 	if is_on_floor():
 		if velocity.x == 0:
@@ -73,5 +78,8 @@ func calculate_state():
 			set_state(PLAYER_STATE.FALL)
 		else:
 			set_state(PLAYER_STATE.JUMP)
+
+		
+		
 		
 
