@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://bo07d7yflo04q"]
+
+[ext_resource type="Script" path="res://scripts/character_body_2d.gd" id="1_6hmos"]
+[ext_resource type="Texture2D" uid="uid://c6wldjh4apaec" path="res://animations/Soldier/soldier_1-IDLE.png" id="2_ghu67"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dhi7q"]
+size = Vector2(50, 252)
+
+[sub_resource type="Animation" id="Animation_x22ew"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="Animation" id="Animation_4u1dg"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+}
+
+[sub_resource type="Animation" id="Animation_q7lkr"]
+resource_name = "jump"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lrvjc"]
+_data = {
+"RESET": SubResource("Animation_x22ew"),
+"idle": SubResource("Animation_4u1dg"),
+"jump": SubResource("Animation_q7lkr")
+}
+
+[node name="PlayeR" type="CharacterBody2D"]
+script = ExtResource("1_6hmos")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(239.5, -194.901)
+scale = Vector2(3.45313, 4.0066)
+texture = ExtResource("2_ghu67")
+offset = Vector2(0, 17)
+hframes = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(237, -129)
+shape = SubResource("RectangleShape2D_dhi7q")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Animation1" type="AnimationPlayer" parent="Node"]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_lrvjc")
+}
