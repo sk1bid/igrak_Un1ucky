@@ -1,3 +1,7 @@
 res://scripts/world.tscn
 res://scripts/character_body_2d.tscn
-res://scripts/character_body_2d.gd
+res://scripts/menu.tscn
+res://scripts/menu.gd
+res://mainmenu.tscn
+res://scripts/mainmenu.gd
+res://scripts/mainmenu.tscn

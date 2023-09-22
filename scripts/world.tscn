@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0wjlhs6tv2b"]
+[gd_scene load_steps=8 format=3 uid="uid://c0wjlhs6tv2b"]
 
 [ext_resource type="Texture2D" uid="uid://t7dr0hbj6rjo" path="res://background/zad.png" id="1_it4mg"]
 [ext_resource type="PackedScene" uid="uid://bo07d7yflo04q" path="res://scripts/character_body_2d.tscn" id="3_fkemh"]
+[ext_resource type="Texture2D" uid="uid://c0m8j04grhtlb" path="res://background/pixil-frame-0_5.png" id="3_l7gty"]
+[ext_resource type="Texture2D" uid="uid://sakmtyn8rhyy" path="res://background/pixil-frame-0_6.png" id="4_wdfjn"]
+[ext_resource type="Texture2D" uid="uid://tkipp03e7ghm" path="res://background/pixil-frame-0_4.png" id="5_2khoi"]
+[ext_resource type="Texture2D" uid="uid://h5sroyxl7ro6" path="res://background/pixil-frame-0_2.png" id="6_4jq7a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6fueh"]
-size = Vector2(1278, 116)
+size = Vector2(1278, 114)
 
 [node name="World" type="Node2D"]
 
@@ -23,7 +27,7 @@ position = Vector2(-1657, 481)
 [node name="StaticBody2D" type="StaticBody2D" parent="pol"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pol/StaticBody2D"]
-position = Vector2(-925, 536)
+position = Vector2(-925, 537)
 shape = SubResource("RectangleShape2D_6fueh")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -37,3 +41,83 @@ offset_top = 478.0
 offset_right = -283.0
 offset_bottom = 595.0
 color = Color(0.0901961, 0.152941, 0.0823529, 1)
+
+[node name="Pixil-frame-05" type="Sprite2D" parent="."]
+position = Vector2(-1427, 508)
+scale = Vector2(3.71, 2.72)
+texture = ExtResource("3_l7gty")
+
+[node name="Pixil-frame-06" type="Sprite2D" parent="."]
+position = Vector2(-1350.25, 505.437)
+scale = Vector2(2.855, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-07" type="Sprite2D" parent="."]
+position = Vector2(-782, 504)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-08" type="Sprite2D" parent="."]
+position = Vector2(-946, 504)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-09" type="Sprite2D" parent="."]
+position = Vector2(-1027, 505)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-10" type="Sprite2D" parent="."]
+position = Vector2(-1108, 505)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-11" type="Sprite2D" parent="."]
+position = Vector2(-1189, 505)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-12" type="Sprite2D" parent="."]
+position = Vector2(-1269, 505)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-14" type="Sprite2D" parent="."]
+position = Vector2(-537.5, 504.563)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-15" type="Sprite2D" parent="."]
+position = Vector2(-618.5, 504.563)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-16" type="Sprite2D" parent="."]
+position = Vector2(-698.5, 504.563)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-18" type="Sprite2D" parent="."]
+position = Vector2(-269, 504.563)
+scale = Vector2(1.74, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-19" type="Sprite2D" parent="."]
+position = Vector2(-294.5, 504.563)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-20" type="Sprite2D" parent="."]
+position = Vector2(-374.5, 504.563)
+scale = Vector2(2.85, 2.81125)
+texture = ExtResource("4_wdfjn")
+
+[node name="Pixil-frame-04" type="Sprite2D" parent="."]
+position = Vector2(-864, 500.25)
+scale = Vector2(2.845, 2.955)
+texture = ExtResource("5_2khoi")
+
+[node name="Pixil-frame-02" type="Sprite2D" parent="."]
+position = Vector2(-457, 496)
+scale = Vector2(2.795, 3.01)
+texture = ExtResource("6_4jq7a")

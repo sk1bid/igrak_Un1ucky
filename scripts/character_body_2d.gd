@@ -35,9 +35,10 @@ func move_horizontal():
 	
 	if Input.is_action_pressed('move_left'):
 		velocity.x -= RUN_SPEED
+		sprite_2D.flip_h = true
 	elif Input.is_action_pressed('move_right'):
 		velocity.x += RUN_SPEED
-		
+		sprite_2D.flip_h = false
 		
 func jump_handler():
 	if Input.is_action_just_pressed('jump') and is_on_floor():
@@ -49,6 +50,8 @@ func clamp_fall_velocity():
 func set_state(new_state: PLAYER_STATE):
 	if new_state == _state:
 		return
+		
+	_state = new_state
 	match _state:
 		PLAYER_STATE.IDLE:
 			animation_player.play('idle')
