@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://6lwgfj5k1ar2"]
 
 [ext_resource type="Script" path="res://1_missioon.gd" id="1_8pint"]
-[ext_resource type="Texture2D" path="res://xd5h7XGcByWFgAAAABJRU5ErkJggg.png" id="1_f5pr3"]
 [ext_resource type="Texture2D" uid="uid://caw0vbbd31262" path="res://grass.png" id="2_1s55j"]
 [ext_resource type="PackedScene" uid="uid://bf6d7lrvucrdq" path="res://enemy2.tscn" id="3_3kedb"]
 [ext_resource type="PackedScene" uid="uid://sjng3lyk2bmx" path="res://gtrg/man_with_gun.tscn" id="3_j0rah"]
 [ext_resource type="PackedScene" uid="uid://xs2es6epj884" path="res://starik.tscn" id="4_juqu6"]
 [ext_resource type="PackedScene" uid="uid://c13ucyfb7xypo" path="res://enemy.tscn" id="6_ta8ve"]
+[ext_resource type="Texture2D" uid="uid://crf8uvowql1mw" path="res://fon1.png" id="7_hokct"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rssj6"]
 size = Vector2(298.288, 72.9878)
@@ -18,6 +18,11 @@ size = Vector2(20, 216.644)
 script = ExtResource("1_8pint")
 enemy_scenes = Array[PackedScene]([ExtResource("6_ta8ve")])
 enemy_scenes2 = Array[PackedScene]([ExtResource("3_3kedb")])
+
+[node name="Fon1" type="Sprite2D" parent="."]
+position = Vector2(1058, 253.788)
+scale = Vector2(0.647692, 0.576355)
+texture = ExtResource("7_hokct")
 
 [node name="EnemySpawnTimer2" type="Timer" parent="."]
 autostart = true
@@ -34,7 +39,6 @@ zoom = Vector2(1.14, 1.14)
 [node name="IWv4v5b" type="Sprite2D" parent="."]
 position = Vector2(1066.83, 282.102)
 scale = Vector2(0.651667, 0.641494)
-texture = ExtResource("1_f5pr3")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(1058, 315)
