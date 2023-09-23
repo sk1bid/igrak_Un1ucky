@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca7r7dysy1ll4"]
+
+[ext_resource type="AudioStream" uid="uid://ck87e6kx2io76" path="res://sounds/arta2.wav" id="1_gyw0i"]
+
+[node name="arta" type="AudioStreamPlayer"]
+stream = ExtResource("1_gyw0i")
+autoplay = true

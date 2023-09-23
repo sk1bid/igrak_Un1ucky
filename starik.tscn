@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://xs2es6epj884"]
+
+[ext_resource type="Texture2D" uid="uid://cvivjggps6ave" path="res://animations/npc/old_man_idle.png" id="1_m7so0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rasps"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb3ym"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mlf0"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ploia"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fj2cw"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xxv6h"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7owrb"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2kmab"]
+atlas = ExtResource("1_m7so0")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ug677"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rasps")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb3ym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mlf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ploia")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fj2cw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xxv6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7owrb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2kmab")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_ug677")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.614741

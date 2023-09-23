@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx4k6wgm01dph"]
+
+[ext_resource type="AudioStream" uid="uid://dbx1hv55cefhg" path="res://sounds/Forest (8-Bit Music).mp3--online-audio-convert.com.wav" id="1_7lux0"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_7lux0")
+volume_db = -8.433
+autoplay = true

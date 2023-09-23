@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvxht3cdea600"]
+
+[ext_resource type="Script" path="res://man_with_gun.gd" id="1_w6dv3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uswkf"]
+radius = 23.0
+height = 246.0
+
+[node name="man_with_the_gun2" type="CharacterBody2D"]
+script = ExtResource("1_w6dv3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(77, -30)
+shape = SubResource("CapsuleShape2D_uswkf")

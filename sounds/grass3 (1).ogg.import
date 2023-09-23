@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://pm1yvge7oob4"
+path="res://.godot/imported/grass3 (1).ogg-3ba46088958e05e2d22d5d653b91a515.oggvorbisstr"
+
+[deps]
+
+source_file="res://sounds/grass3 (1).ogg"
+dest_files=["res://.godot/imported/grass3 (1).ogg-3ba46088958e05e2d22d5d653b91a515.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://8v0aybxvho2d"]
+
+[ext_resource type="Script" path="res://pula2.gd" id="1_khivd"]
+[ext_resource type="Texture2D" uid="uid://t4og0x82ryx3" path="res://pr/pixil-frame-0 (1).png" id="1_ntsfi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uymu3"]
+size = Vector2(22, 10)
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_khivd")
+speed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(12, -3)
+scale = Vector2(2, 2)
+texture = ExtResource("1_ntsfi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_uymu3")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(24, 4)
+scale = Vector2(0.065, 0.155)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

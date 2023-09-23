@@ -1,0 +1,100 @@
+[gd_scene load_steps=14 format=3 uid="uid://c13ucyfb7xypo"]
+
+[ext_resource type="Script" path="res://enemy.gd" id="1_0ay8h"]
+[ext_resource type="Texture2D" uid="uid://uohemgnhkq7s" path="res://animations/enemy/knight walk animation.png" id="1_7vpbg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_otkjt"]
+radius = 18.0
+height = 248.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfyys"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(0, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ktkg"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(42, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_juxm0"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(84, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ckeq"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(126, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrprs"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(168, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv758"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(210, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_st856"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(252, 0, 42, 42)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r61y4"]
+atlas = ExtResource("1_7vpbg")
+region = Rect2(294, 0, 42, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dfsxq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfyys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ktkg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_juxm0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ckeq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrprs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv758")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_st856")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r61y4")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dlfhu"]
+
+[node name="Enemy" type="Area2D"]
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_0ay8h")
+
+[node name="ooi" type="CollisionShape2D" parent="."]
+position = Vector2(73, 18)
+shape = SubResource("CapsuleShape2D_otkjt")
+
+[node name="AnimatedSpirite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(74, -2)
+scale = Vector2(8, 8)
+sprite_frames = SubResource("SpriteFrames_dfsxq")
+animation = &"run"
+autoplay = "run"
+frame_progress = 0.562961
+
+[node name="t7o" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="ooi2" type="CollisionShape2D" parent="."]
+position = Vector2(228, 27)
+rotation = -1.55509
+shape = SubResource("CapsuleShape2D_dlfhu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

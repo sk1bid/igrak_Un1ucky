@@ -1,24 +1,38 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0wjlhs6tv2b"]
+[gd_scene load_steps=14 format=3 uid="uid://c0wjlhs6tv2b"]
 
 [ext_resource type="Texture2D" uid="uid://xittv247y48u" path="res://background/IWv4v5B.png" id="1_hm7dt"]
-[ext_resource type="PackedScene" uid="uid://bo07d7yflo04q" path="res://scripts/character_body_2d.tscn" id="3_fkemh"]
 [ext_resource type="Texture2D" uid="uid://c0m8j04grhtlb" path="res://background/pixil-frame-0_5.png" id="3_l7gty"]
 [ext_resource type="Texture2D" uid="uid://sakmtyn8rhyy" path="res://background/pixil-frame-0_6.png" id="4_wdfjn"]
 [ext_resource type="Texture2D" uid="uid://tkipp03e7ghm" path="res://background/pixil-frame-0_4.png" id="5_2khoi"]
 [ext_resource type="Texture2D" uid="uid://h5sroyxl7ro6" path="res://background/pixil-frame-0_2.png" id="6_4jq7a"]
+[ext_resource type="PackedScene" uid="uid://sjng3lyk2bmx" path="res://gtrg/man_with_gun.tscn" id="6_x6fb3"]
+[ext_resource type="PackedScene" uid="uid://cx4k6wgm01dph" path="res://musicl1.tscn" id="7_v6ptd"]
+[ext_resource type="PackedScene" uid="uid://ca7r7dysy1ll4" path="res://arta.tscn" id="8_m531w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6fueh"]
-size = Vector2(1921.5, 148)
+size = Vector2(916, 148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_llasm"]
+size = Vector2(34, 962.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xcqyy"]
+size = Vector2(35, 818)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2be4n"]
+size = Vector2(72, 97)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qnhyb"]
+size = Vector2(46, 41)
 
 [node name="World" type="Node2D"]
 
 [node name="IWv4v5b" type="Sprite2D" parent="."]
-position = Vector2(1056.5, 238.5)
-scale = Vector2(1.54273, 1.17899)
+position = Vector2(1068.5, 231.5)
+scale = Vector2(1.565, 1.23)
 texture = ExtResource("1_hm7dt")
 
-[node name="PlayeR" parent="." instance=ExtResource("3_fkemh")]
-position = Vector2(-68, 654)
+[node name="Man_with_gun" parent="." instance=ExtResource("6_x6fb3")]
+position = Vector2(258, 485)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
@@ -27,13 +41,16 @@ position = Vector2(-68, 654)
 [node name="StaticBody2D" type="StaticBody2D" parent="pol"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pol/StaticBody2D"]
-position = Vector2(1177.25, 712)
+position = Vector2(670, 712)
 shape = SubResource("RectangleShape2D_6fueh")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="pol/StaticBody2D"]
-position = Vector2(138, -170)
-rotation = -1.5708
-shape = SubResource("RectangleShape2D_6fueh")
+position = Vector2(191, 306.75)
+shape = SubResource("RectangleShape2D_llasm")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="pol/StaticBody2D"]
+position = Vector2(1209, 478)
+shape = SubResource("RectangleShape2D_xcqyy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 212.0
@@ -42,82 +59,108 @@ offset_right = 2061.0
 offset_bottom = 784.0
 color = Color(0.0901961, 0.152941, 0.0823529, 1)
 
-[node name="Pixil-frame-05" type="Sprite2D" parent="."]
-position = Vector2(393, 676.25)
-scale = Vector2(4.6775, 3.535)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1067, 299)
+zoom = Vector2(1.115, 1.115)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Pixil-frame-05" type="Sprite2D" parent="Node"]
+position = Vector2(397, 676)
+scale = Vector2(5.14875, 3.535)
 texture = ExtResource("3_l7gty")
 
-[node name="Pixil-frame-06" type="Sprite2D" parent="."]
+[node name="Pixil-frame-06" type="Sprite2D" parent="Node"]
 position = Vector2(519, 673.859)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-15" type="Sprite2D" parent="."]
+[node name="Pixil-frame-15" type="Sprite2D" parent="Node"]
 position = Vector2(519, 673.859)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-16" type="Sprite2D" parent="."]
+[node name="Pixil-frame-16" type="Sprite2D" parent="Node"]
 position = Vector2(2022, 669)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-17" type="Sprite2D" parent="."]
+[node name="Pixil-frame-17" type="Sprite2D" parent="Node"]
 position = Vector2(1895, 669)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-07" type="Sprite2D" parent="."]
+[node name="Pixil-frame-07" type="Sprite2D" parent="Node"]
 position = Vector2(1770, 670)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-08" type="Sprite2D" parent="."]
+[node name="Pixil-frame-08" type="Sprite2D" parent="Node"]
 position = Vector2(765, 673)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-09" type="Sprite2D" parent="."]
+[node name="Pixil-frame-09" type="Sprite2D" parent="Node"]
 position = Vector2(1516, 672)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-10" type="Sprite2D" parent="."]
+[node name="Pixil-frame-10" type="Sprite2D" parent="Node"]
 position = Vector2(1390, 671)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-11" type="Sprite2D" parent="."]
-position = Vector2(1262, 671)
+[node name="Pixil-frame-11" type="Sprite2D" parent="Node"]
+position = Vector2(637, 672)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-12" type="Sprite2D" parent="."]
+[node name="Pixil-frame-12" type="Sprite2D" parent="Node"]
 position = Vector2(1136, 671)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-13" type="Sprite2D" parent="."]
+[node name="Pixil-frame-13" type="Sprite2D" parent="Node"]
 position = Vector2(1010, 671)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-14" type="Sprite2D" parent="."]
-position = Vector2(882, 670)
+[node name="Pixil-frame-14" type="Sprite2D" parent="Node"]
+position = Vector2(882, 668)
 scale = Vector2(4.4275, 3.64281)
 texture = ExtResource("4_wdfjn")
 
-[node name="Pixil-frame-04" type="Sprite2D" parent="."]
-position = Vector2(639, 668)
-scale = Vector2(4.1925, 3.72)
+[node name="Pixil-frame-04" type="Sprite2D" parent="Node"]
+position = Vector2(1274, 662)
+scale = Vector2(4.747, 3.97)
 texture = ExtResource("5_2khoi")
 
-[node name="Pixil-frame-02" type="Sprite2D" parent="."]
+[node name="Pixil-frame-02" type="Sprite2D" parent="Node"]
 position = Vector2(1641, 664)
 scale = Vector2(4.36375, 3.8875)
 texture = ExtResource("6_4jq7a")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1058, 315)
-scale = Vector2(5.84, 5.84)
-zoom = Vector2(1.14, 1.14)
+[node name="music" parent="Node" instance=ExtResource("7_v6ptd")]
+volume_db = 2.81
+
+[node name="arta" parent="Node" instance=ExtResource("8_m531w")]
+volume_db = -1.874
+
+[node name="fwgr" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fwgr"]
+position = Vector2(1167, 937)
+shape = SubResource("RectangleShape2D_2be4n")
+
+[node name="boloto" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="boloto"]
+position = Vector2(1162, 662)
+shape = SubResource("RectangleShape2D_qnhyb")
+
+[connection signal="body_entered" from="fwgr" to="Man_with_gun" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="boloto" to="Man_with_gun" method="_on_boloto_body_entered"]

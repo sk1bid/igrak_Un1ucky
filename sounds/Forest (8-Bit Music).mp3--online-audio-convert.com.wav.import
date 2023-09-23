@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dbx1hv55cefhg"
+path="res://.godot/imported/Forest (8-Bit Music).mp3--online-audio-convert.com.wav-e724762325fce0e84fb2989cc729923f.sample"
+
+[deps]
+
+source_file="res://sounds/Forest (8-Bit Music).mp3--online-audio-convert.com.wav"
+dest_files=["res://.godot/imported/Forest (8-Bit Music).mp3--online-audio-convert.com.wav-e724762325fce0e84fb2989cc729923f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
