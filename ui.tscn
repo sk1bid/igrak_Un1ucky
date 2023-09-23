@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfskq1d8n84gb"]
+
+[ext_resource type="Script" path="res://ui.gd" id="1_j4441"]
+[ext_resource type="Texture2D" uid="uid://cbymlwkrgwjlb" path="res://background2/bakcground_day3.png" id="2_43r0u"]
+
+[node name="ui" type="CanvasLayer"]
+script = ExtResource("1_j4441")
+
+[node name="end_of_game" type="Node2D" parent="."]
+
+[node name="RESTART" type="Button" parent="end_of_game"]
+offset_left = 1025.0
+offset_top = 231.0
+offset_right = 1765.0
+offset_bottom = 395.0
+
+[node name="Sprite2D" type="Sprite2D" parent="end_of_game/RESTART"]
+position = Vector2(369.5, 82.5)
+scale = Vector2(1.16094, 0.44837)
+texture = ExtResource("2_43r0u")
+
+[node name="Node2D" type="Node2D" parent="end_of_game"]
+
+[connection signal="pressed" from="end_of_game/RESTART" to="." method="_on_restart_pressed"]
