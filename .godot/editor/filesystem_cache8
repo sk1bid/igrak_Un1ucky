@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1695501123
+::res://::1695521313
 1_missioon.gd::GDScript::-1::1695499907::0::1::::<>Node2D<>::
-1_missioon.tscn::PackedScene::2199909074575392077::1695501074::0::1::::<><>::res://1_missioon.gd<>res://xd5h7XGcByWFgAAAABJRU5ErkJggg.png<>uid://caw0vbbd31262::::res://grass.png<>uid://bf6d7lrvucrdq::::res://enemy2.tscn<>uid://sjng3lyk2bmx::::res://gtrg/man_with_gun.tscn<>uid://xs2es6epj884::::res://starik.tscn<>uid://c13ucyfb7xypo::::res://enemy.tscn
-arta.tscn::PackedScene::4839990985294402639::1695501074::0::1::::<><>::uid://ck87e6kx2io76::::res://sounds/arta2.wav
+1_missioon.tscn::PackedScene::2199909074575392077::1695501179::0::1::::<><>::res://1_missioon.gd<>uid://caw0vbbd31262::::res://grass.png<>uid://bf6d7lrvucrdq::::res://enemy2.tscn<>uid://sjng3lyk2bmx::::res://gtrg/man_with_gun.tscn<>uid://xs2es6epj884::::res://starik.tscn<>uid://c13ucyfb7xypo::::res://enemy.tscn<>uid://crf8uvowql1mw::::res://fon1.png
+arta.tscn::PackedScene::4839990985294402639::1695501179::0::1::::<><>::uid://ck87e6kx2io76::::res://sounds/arta2.wav
 enemy2.gd::GDScript::-1::1695500389::0::1::::Enemy2<>Area2D<>::
-enemy2.tscn::PackedScene::2801600513641867754::1695501074::0::1::::<><>::uid://uohemgnhkq7s::::res://animations/enemy/knight walk animation.png<>res://enemy2.gd
+enemy2.tscn::PackedScene::2801600513641867754::1695501179::0::1::::<><>::uid://uohemgnhkq7s::::res://animations/enemy/knight walk animation.png<>res://enemy2.gd
 enemy.gd::GDScript::-1::1695500214::0::1::::Enemy<>Area2D<>::
-enemy.tscn::PackedScene::6656773058905412868::1695501074::0::1::::<><>::res://enemy.gd<>uid://uohemgnhkq7s::::res://animations/enemy/knight walk animation.png
+enemy.tscn::PackedScene::6656773058905412868::1695501179::0::1::::<><>::res://enemy.gd<>uid://uohemgnhkq7s::::res://animations/enemy/knight walk animation.png
 fon1.png::CompressedTexture2D::5978414100281481134::1695472161::1695500920::1::::<><>::
 grass.png::CompressedTexture2D::4819813158709614037::1695472161::1695472161::1::::<><>::
 grob.png::CompressedTexture2D::5965865492520427507::1695475969::1695500955::1::::<><>::
@@ -19,13 +19,13 @@ pixil-frame-0_4.png::CompressedTexture2D::5987162834390866923::1695451116::16954
 pixil-frame-0_5.png::CompressedTexture2D::8697881869082558283::1695451109::1695451109::1::::<><>::
 pixil-frame-0_6.png::CompressedTexture2D::7230706372887702592::1695451112::1695451112::1::::<><>::
 pula2.gd::GDScript::-1::1695500214::0::1::::<>Area2D<>::
-pula2.tscn::PackedScene::2361102960888063481::1695501074::0::1::::<><>::res://pula2.gd<>uid://t4og0x82ryx3::::res://pr/pixil-frame-0 (1).png
+pula2.tscn::PackedScene::2361102960888063481::1695501179::0::1::::<><>::res://pula2.gd<>uid://t4og0x82ryx3::::res://pr/pixil-frame-0 (1).png
 pula.gd::GDScript::-1::1695500255::0::1::::<>Area2D<>::
-pula.tscn::PackedScene::6583908651614265302::1695501074::0::1::::<><>::uid://t4og0x82ryx3::::res://pr/pixil-frame-0 (1).png<>res://pula.gd
+pula.tscn::PackedScene::6583908651614265302::1695501179::0::1::::<><>::uid://t4og0x82ryx3::::res://pr/pixil-frame-0 (1).png<>res://pula.gd
 soldati.png::CompressedTexture2D::8143370520745693331::1695393594::1695393594::1::::<><>::
 soldier_walk1.png::CompressedTexture2D::8148832408022314551::1695391667::1695391667::1::::<><>::
 starik.gd::GDScript::-1::1695481288::0::1::::<>CharacterBody2D<>::
-starik.tscn::PackedScene::1653149698739554171::1695501074::0::1::::<><>::uid://cvivjggps6ave::::res://animations/npc/old_man_idle.png
+starik.tscn::PackedScene::1653149698739554171::1695501179::0::1::::<><>::uid://cvivjggps6ave::::res://animations/npc/old_man_idle.png
 ui.tscn::PackedScene::2293982439335023463::1695455288::0::1::::<><>::
 ::res://animations/::1695480833
 ::res://animations/enemy/::1695491974
@@ -116,8 +116,8 @@ terrain_top_right.png::CompressedTexture2D::2512021351609622223::1695386134::169
 spritesheet.json::JSON::-1::1695386134::0::1::::<><>::
 spritesheet.png::CompressedTexture2D::4127003848541127312::1695386134::1695386150::1::::<><>::
 spritesheet.txt::TextFile::-1::1695386134::0::1::::<><>::
-::res://gtrg/::1695501074
-man_with_gun.tscn::PackedScene::1282780109692043243::1695501074::0::1::::<><>::res://man_with_gun.gd<>uid://dpyedyv6rl6ih::::res://animations/Soldier/soldier_1-IDLE_with_gun.png<>uid://c4f2mtw8osk8g::::res://animations/Soldier/soldier_walk_with_gun.png<>uid://c71sfi2cc6bo::::res://animations/Soldier/soldier_jump2-Sheet.png
+::res://gtrg/::1695501179
+man_with_gun.tscn::PackedScene::1282780109692043243::1695501179::0::1::::<><>::res://man_with_gun.gd<>uid://dpyedyv6rl6ih::::res://animations/Soldier/soldier_1-IDLE_with_gun.png<>uid://c4f2mtw8osk8g::::res://animations/Soldier/soldier_walk_with_gun.png<>uid://c71sfi2cc6bo::::res://animations/Soldier/soldier_jump2-Sheet.png
 ::res://pr/::1695479793
 pixil-frame-0 (1).png::CompressedTexture2D::1394317086802910626::1695479793::1695479793::1::::<><>::
 ::res://Ronin/::1695386150
@@ -129,13 +129,13 @@ spr_RoninGetHit_strip.png::CompressedTexture2D::6366487088109370646::1695386134:
 spr_RoninIdle_strip.png::CompressedTexture2D::2804157341013190471::1695386135::1695386149::1::::<><>::
 spr_RoninJump_strip.png::CompressedTexture2D::7103991213716752783::1695386135::1695386149::1::::<><>::
 spr_RoninRun_strip.png::CompressedTexture2D::4534946800022123969::1695386135::1695386149::1::::<><>::
-::res://scripts/::1695501074
+::res://scripts/::1695501179
 character_body_2d.gd::GDScript::-1::1695455328::0::1::::<>CharacterBody2D<>::
 character_body_2d.tscn::PackedScene::3422623957692257934::1695480650::0::1::::<><>::res://scripts/Player.gd<>uid://c0eag2x0rxsag
 Menu.gd::GDScript::-1::1695461896::0::1::::<>Control<>::
 menu.tscn::PackedScene::8938297371117503278::1695463123::0::1::::<><>::res://scripts/Menu.gd
 Player.gd::GDScript::-1::1695456188::0::1::::<>CharacterBody2D<>::
-world.tscn::PackedScene::193339566544083955::1695501074::0::1::::<><>::uid://xittv247y48u::::res://background/IWv4v5B.png<>uid://c0m8j04grhtlb::::res://background/pixil-frame-0_5.png<>uid://sakmtyn8rhyy::::res://background/pixil-frame-0_6.png<>uid://tkipp03e7ghm::::res://background/pixil-frame-0_4.png<>uid://h5sroyxl7ro6::::res://background/pixil-frame-0_2.png<>uid://sjng3lyk2bmx::::res://gtrg/man_with_gun.tscn<>uid://cx4k6wgm01dph::::res://musicl1.tscn<>uid://ca7r7dysy1ll4::::res://arta.tscn
+world.tscn::PackedScene::193339566544083955::1695501179::0::1::::<><>::uid://xittv247y48u::::res://background/IWv4v5B.png<>uid://c0m8j04grhtlb::::res://background/pixil-frame-0_5.png<>uid://sakmtyn8rhyy::::res://background/pixil-frame-0_6.png<>uid://tkipp03e7ghm::::res://background/pixil-frame-0_4.png<>uid://h5sroyxl7ro6::::res://background/pixil-frame-0_2.png<>uid://sjng3lyk2bmx::::res://gtrg/man_with_gun.tscn<>uid://cx4k6wgm01dph::::res://musicl1.tscn<>uid://ca7r7dysy1ll4::::res://arta.tscn
 ::res://sounds/::1695469678
 aks74u_draw_full.ogg::AudioStreamOggVorbis::5097591350861530919::1695396934::1695396958::1::::<><>::
 aks74u_empty.ogg::AudioStreamOggVorbis::1731907681498397655::1695396934::1695396958::1::::<><>::
