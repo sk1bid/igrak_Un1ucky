@@ -1,5 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://xs2es6epj884"]
+[gd_scene load_steps=13 format=3 uid="uid://xs2es6epj884"]
 
+[ext_resource type="Script" path="res://starik.gd" id="1_8w3q2"]
 [ext_resource type="Texture2D" uid="uid://cvivjggps6ave" path="res://animations/npc/old_man_idle.png" id="1_m7so0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rasps"]
@@ -66,7 +67,14 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6y3ao"]
+radius = 37.0
+height = 192.0
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_8w3q2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
@@ -74,3 +82,7 @@ sprite_frames = SubResource("SpriteFrames_ug677")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.614741
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 30)
+shape = SubResource("CapsuleShape2D_6y3ao")

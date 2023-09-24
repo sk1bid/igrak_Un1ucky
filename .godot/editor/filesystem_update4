@@ -7,3 +7,14 @@ res://pula2.tscn
 res://enemy.tscn
 res://enemy2.tscn
 res://arta.tscn
+res://1_missioon.gd
+res://enemy.gd
+res://pula2.gd
+res://pula.gd
+res://enemy2.gd
+res://death.tscn
+res://смерть.gd
+res://game_over_screen.tscn
+res://hud.tscn
+res://hud.gd
+res://starik.gd

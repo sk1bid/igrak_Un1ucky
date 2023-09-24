@@ -74,8 +74,8 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dlfhu"]
 
 [node name="Enemy" type="Area2D"]
-collision_layer = 2
-collision_mask = 5
+collision_layer = 10
+collision_mask = 13
 script = ExtResource("1_0ay8h")
 
 [node name="ooi" type="CollisionShape2D" parent="."]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dc62xhmnje08f"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_siswl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_orbno"]
+font_size = 62
+
+[node name="hud" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 790.0
+offset_top = 44.0
+offset_right = 1023.0
+offset_bottom = 62.0
+script = ExtResource("1_siswl")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 71.0
+offset_right = 1274.0
+offset_bottom = 160.0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_orbno")
+vertical_alignment = 1
